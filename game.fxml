@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry>
+<?import javafx.scene>
+<?import javafx.scene.control>
+<?import javafx.scene.effect>
+<?import javafx.scene.layout>
+<?import javafx.scene.paint>
+<?import javafx.scene.text>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="309.4" minWidth="274.4" prefWidth="274.4" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #330000;" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #004C99;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="playerOneTextField" alignment="CENTER" blendMode="OVERLAY" cache="true" prefHeight="26.0" prefWidth="238.0" promptText="Player_One_Name" style="-fx-background-color: #190033;">
+               <effect>
+                  <DropShadow height="25.77" radius="32.045" spread="0.55" width="104.41">
+                     <color>
+                        <Color red="0.9710526466369629" green="0.04495614022016525" blue="0.04495614022016525" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="30.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font></TextField>
+            <TextField fx:id="playerTwoTextField" alignment="CENTER" promptText="Player_Two_Name" style="-fx-background-color: #000000; -fx-background-color: #660033;">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bodoni MT Black" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.36" height="28.15" width="13.85">
+                     <color>
+                        <Color red="0.5120000243186951" green="0.800000011920929" blue="0.7265475392341614" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <Button fx:id="setNamesButton" blendMode="MULTIPLY" mnemonicParsing="false" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #0000FF;" text="Set Names" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.3740457796868477" endY="0.5114503516495683" startX="0.3501908251347432" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9815789461135864" green="0.9802156686782837" blue="0.9797611832618713" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.06578947603702545" green="0.06469298154115677" blue="0.06469298154115677" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets left="90.0" top="35.0" />
+               </VBox.margin>
+               <effect>
+                  <InnerShadow choke="0.5">
+                     <color>
+                        <Color red="0.06578947603702545" green="0.0625" blue="0.0625" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+            <Label fx:id="playerNameLable" alignment="CENTER" prefHeight="58.0" prefWidth="314.0" text="Player One">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="39.0" prefWidth="303.0" text="Turn" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6488549618320612">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9078947305679321" green="0.8793128728866577" blue="0.8793128728866577" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <Reflection fraction="0.86" topOpacity="0.73" />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+    </children>
+</GridPane>
